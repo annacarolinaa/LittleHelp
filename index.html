@@ -1,0 +1,202 @@
+<!DOCTYPE html> <!-- para criar um arvivo no html5, basta escrever "<html>" e clicar na opção html:5" -->
+<html lang="pt-BR"> <!-- trocar idioma -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Help - Soluções em Comunicação</title>
+    <link rel="stylesheet" href="./style.css"> <!-- link para css -->
+
+    <!-- link para google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/bd542eb4b2.js" crossorigin="anonymous"></script> <!-- link para icones do font awsome -->
+
+    <!-- Função para o alert do sistema, para que o usuário saiba onde está indo -->
+     <script>
+        function msg() {
+            alert("Você será redirecionado para o seu servidor de email," +
+                "caso não esteja logado no seu email, efetue o login e tente novamente."
+            )
+        }
+     </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#topo"><img id="logo" src="./img/logo 1.svg" alt=""></a>
+            <ul class="menu">
+                <li><a href="#topo">Topo</a></li>
+                <li><a href="#a-lh"> A Little Help</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- as sections dividem as seções do site-->
+        <section id="topo">
+            <div class="informacoes-topo">
+                <H1>prazer, somos a<br> <span class="degrade-01">little help</span></H1>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="video-background">
+                <video width="100%" autoplay muted>
+                    <source src="./video/inicio_4.mp4" type="video/mp4"/>
+                </video>
+            </div>
+        </section>
+        <div class="container">
+        <section id="a-lh">
+            <p class="titulos a-lh-frase">existimos para criar <span class="degrade-01">sinfonias visuais que ressoam na alma</span></p>
+            <div><img class="a-lh-banner-01" src="./img/banner01.png"/></div> <!-- a <div> é para divisões, enquanto a tag <img> é para imagens -->
+                <div class="a-lh-flex"> <!-- eu sou a primeira -->
+                    <div> <!-- eu sou a segunda -->
+                        <div><i class="fa-solid fa-quote-left"></i></div> <!-- eu sou a terceira -->
+                        <div><p class="a-lh-jucelino">somos uma <span class="degrade-01">ajudinha</span> para os <span class="degrade-01">seus objetivos</span></p></div> <!-- eu sou a terceira -->
+                        <div> <img src="./img/assinatura.png"/> </div> <!-- eu sou a terceira -->
+                    </div>
+                    <div class="numeros-flex"> <!-- o display:flex é colocado aqui e seu impacto acontece nos elementos dentro dessa div -->
+                        <div>
+                            <div class="degrade-01 a-lh-numeros">7</div>
+                            <p class="a-lh-jucelino">anos de história</p>
+                        </div> <!-- eu sou a terceira -->
+                        <div>
+                            <div class="degrade-01 a-lh-numeros">85</div>
+                            <p class="a-lh-jucelino">projetos criados</p>
+                        </div> <!-- eu sou a terceira -->
+                        <div>
+                            <div class="degrade-01 a-lh-numeros">3</div>
+                            <p class="a-lh-jucelino">prêmios ganhos</p>
+                        </div> <!-- eu sou a terceira -->
+                    </div>
+                </div>
+        </section>
+
+
+
+        <!-- primeira fileira -->
+        <section id="servicos">
+        <div><h2 class="titulos">como <span class="degrade-01">podemos ajudar</span></h2></div>
+        <div class="fileira-cards"> <!-- aqui é necessario ter 3 div`s, uma para cada coluna do layout -->
+            <div class="servicos-card">
+                <img class="icone-servicos" src="./img/branding.svg" alt="">
+                <div>
+                    <h3>branding</h3>
+                    <p>A arte de construir identidades marcantes, autênticas e impactantes.</p>
+                </div>
+                <button><a target="_blank" href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1!%20Preciso%20de%20uma%20ajudinha.""> <i class="fa-brands fa-whatsapp"></i> &nbsp; quero uma ajudinha</a></button>
+            </div>
+
+            <div>
+                <p class="subtitulos"><span class="degrade-01">criamos a sua marca</span> e comunicamos ela nas <span class="degrade-01">suas mídias sociais</span></p>
+            </div>
+
+            <div class="servicos-card">
+                <img class="icone-servicos" src="./img/socialmedia.png" alt="">
+                <div>
+                    <h3>branding</h3>
+                    <p>A arte de criar estratégia de social media envolventes, autênticas e transformadoras.</p>
+                </div>
+                <button><a target="_blank" href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1!%20Preciso%20de%20uma%20ajudinha.""> <i class="fa-brands fa-whatsapp"></i> &nbsp; quero uma ajudinha</a></button>
+            </div>
+        </div>
+
+
+        <!--segunda fileira-->
+        <div class="fileira-cards"> <!-- aqui é necessario ter 3 div`s, uma para cada coluna do layout -->
+            <div>
+                <p class="subtitulos"><span class="degrade-01">fotos e vídeos</span> que <span class="degrade-01">emocionam e conectam</span></p>
+            </div>
+            <div class="servicos-card">
+                <img class="icone-servicos" src="./img/audiovisual.png" alt="">
+                <div>
+                    <h3>audiovisual</h3>
+                    <p>A arte de produzir conteúdos audiovisuais cativantes, autênticos e inesquecíveis.</p>
+                </div>
+                <button><a target="_blank" href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1!%20Preciso%20de%20uma%20ajudinha.""> <i class="fa-brands fa-whatsapp"></i> &nbsp; quero uma ajudinha</a></button>
+            </div>
+            <div>
+                <p class="subtitulos"><span class="degrade-01">animações</span> para dar <span class="degrade-01">movimento à sua marca</span></p>
+            </div>
+        </div>
+
+
+        <!--terceira fileira-->
+        <div class="fileira-cards"> <!-- aqui é necessario ter 3 div`s, uma para cada coluna do layout -->
+            <div class="servicos-card">
+                <img class="icone-servicos" src="./img/criacaodesites.svg" alt="">
+                <div>
+                    <h3>criação de sites</h3>
+                    <p>A arte de desenvolver sites funcionais, inovadores e visualmente impactantes.</p>
+                </div>
+                <button><a target="_blank" href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1!%20Preciso%20de%20uma%20ajudinha.""> <i class="fa-brands fa-whatsapp"></i> &nbsp; quero uma ajudinha</a></button>
+            </div>
+            <div>
+                <p class="subtitulos">criamos <span class="degrade-01">tudo que você precisa</span></p>
+            </div>
+            <div class="servicos-card">
+                <img class="icone-servicos" src="./img/gamificacao.png" alt="">
+                <div>
+                    <h3>gamificação</h3>
+                    <p>A arte de criar experiências imersivas, envolventes e altamente inovadoras.</p>
+                </div>
+                <button><a target="_blank" href="https://api.whatsapp.com/send?phone=5511912345678&text=Ol%C3%A1!%20Preciso%20de%20uma%20ajudinha.""> <i class="fa-brands fa-whatsapp"></i> &nbsp; quero uma ajudinha</a></button>
+            </div>
+        </div>
+    </section>
+
+        <section id="contato">
+            <h2 class="titulos">Vamos tomar <span class="degrade-01">um cafezinho?</span></h2>
+            <div class="contato-flex"> <!-- aq tem duas colunas -->
+                <div> <!-- sou a primeira coluna -->
+
+                    <div class="contato-cards"> <!-- aqui temos informações do email -->
+                        <div><img src="./img/email.png" class="contato-icone"></div> <!-- sou o icone -->
+                        <div> <!-- sou o texto -->
+                            <p class="cinza">email</p>
+                            <p>contato@littlehelp.com.br</p>
+                        </div> <!-- sou o texto -->
+                    </div>
+
+                    <div class="contato-cards"> <!-- aqui temos informações do telefone -->
+                        <div><img src="./img/whatsapp.png" class="contato-icone"></div> <!-- sou o icone -->
+                        <div> <!-- sou o texto -->
+                            <p class="cinza">telefone</p>
+                            <p>(11) 91234-5678</p>
+                        </div> <!-- sou o texto -->
+                    </div>
+
+                    <div class="contato-cards"> <!-- aqui temos informações do endereço -->
+                        <div><img src="./img/endereco.png" class="contato-icone"></div> <!-- sou o icone -->
+                        <div> <!-- sou o texto -->
+                            <p class="cinza">endereço</p>
+                            <p>Rua Niterói, 180</p>
+                            <p>São caetano do sul</p>
+                        </div> <!-- sou o texto -->
+                    </div>
+                </div> 
+
+                <div> <!-- sou a segunda coluna -->
+                    <form action="mailto:contato@littlehelp.com.br" method="post" enctype="text/plain">
+                        <label for="">nome</label><br>
+                        <input type="text" id="nome" name="nome">
+                        <label for="">email</label><br>
+                        <input type="text" id="email" name="email">
+                        <label for="">telefone</label><br>
+                        <input type="text" id="telefone" name="telefone">
+                        <label for="">mensagem</label><br>
+                        <textarea rows="7" type="text" id="mensagem" name="mensagem"></textarea>
+                        <button type="submit" class="botao" onclick="msg()">enviar</button>
+                    </form>
+                </div> 
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer>
+        <p>little help &#169; todos os direitos reservados.</p>
+    </footer>
+</body>
+</html> 
